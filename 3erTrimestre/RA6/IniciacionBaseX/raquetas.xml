@@ -1,0 +1,53 @@
+<tienda>
+<raqueta>
+   <marca>BABOLAT</marca>
+   <modelo>PURE DRIVE</modelo>
+   <año>2012</año>
+   <opiniones rating="4">
+   <opinion>
+     <descripcion>Una castaña
+     </descripcion>
+   </opinion>
+      <opinion>
+     <descripcion>dos castañaa
+     </descripcion>
+   </opinion>
+   
+   </opiniones>
+</raqueta>
+<raqueta>
+   <marca>YONEX</marca>
+   <modelo>MPTOUR 5</modelo>
+   <año>1997</año>
+   <opiniones rating="1">
+   <opinion>
+     <descripcion>tres castaña
+     </descripcion>
+   </opinion>
+      <opinion>
+     <descripcion>cuatro castañaa
+     </descripcion>
+   </opinion>
+   
+   </opiniones>
+
+
+</raqueta>
+<raqueta>
+   <marca>WILSON</marca>
+   <modelo>HAMMER</modelo>
+   <año>2000</año>
+      <opiniones rating="4">
+   <opinion>
+     <descripcion>cinco castaña
+     </descripcion>
+   </opinion>
+      <opinion>
+     <descripcion>seis castañaa
+     </descripcion>
+   </opinion>
+   
+   </opiniones>
+   
+</raqueta>
+</tienda>
