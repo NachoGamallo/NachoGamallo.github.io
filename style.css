@@ -1,0 +1,111 @@
+body{
+    margin-top: 2%;
+    color: white;
+    background-color: rgb(255, 213, 213);
+}
+
+.main_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu_container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 90, 90);
+    width: 31%;
+    margin-right: 0.5%;
+}
+
+.menu_container>.menu{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 2%;
+    font-weight: bold;
+    margin: 2vw;
+    transition: border-bottom 0.75s ease;
+    border-bottom: 2px solid transparent;
+}
+.main_container>.content_container{
+    width: 67%;
+    background-color: rgb(0, 0, 0);
+}
+
+.menu_container>.menu:hover{
+    border-bottom: 3px solid black;   
+}
+.content_container{
+    margin: auto;
+    padding-left: 1%;
+}
+footer{
+    color: black;
+    text-align: center;
+    margin-top: 0.5%;
+    background-color: rgb(243, 90, 90);
+    padding: 1%;
+    font-weight: bold;
+}
+.foto{
+    width: 30%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+}
+
+.space{
+    display: block;
+    margin-bottom: 2%;
+}
+
+.exercicesLinks{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(128, 0, 0);
+    font-size: 1em;
+    margin: 5%;
+    padding: 1em;
+    text-align: center;
+    overflow: hidden;
+    width: 6em;
+    height: 2em;
+    box-shadow: 5px 5px 15px rgba(255, 0, 0, 0.4);
+    transform: rotate(-5deg);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.exercicesLinks:hover{
+    transform: scale(1.2) rotate(0deg);
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0);
+}
+
+.linksContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+}
+
+.linksContainer>a{
+    padding: 10%;
+}
+
+
+@media (max-width : 920px){
+
+    .content_container>.main_container{
+        flex-direction: column;
+    }
+
+    .exercicesLinks {
+        font-size: 1em;
+        padding: 0.4em 0.8em;
+        width: 7em;
+        height: 3em;
+    }
+}
+
+@media ( max-width : 1550px) {
+    .content_container{
+        padding-left: 0;
+    }
+}
