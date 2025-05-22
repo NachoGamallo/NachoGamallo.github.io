@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8">
+<árbol>
+    <especie>
+        <nombre>Palmera</nombre>
+        <variedad>Sagu</variedad>
+        <origen>Alemania</origen>
+        <origen>IslasCanarias</origen>
+        <color_fruto>Marron</color_fruto>
+        <maduración>Tardia</maduración>
+        <riego>Altisimo(cocobomba)</riego>
+    </especie>
+</árbol>

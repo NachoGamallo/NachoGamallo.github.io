@@ -1,0 +1,40 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="curso">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="nombre" type="xsd:string"/>
+                <xsd:element name="profesor">
+                    <xsd:complexType>
+                        <xsd:attribute name="nombre" type="xsd:string" use="required"/>
+                        <xsd:attribute name="email" use="required">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:pattern value="^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:attribute>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="duracion">
+                    <xsd:complexType>
+                        <xsd:attribute name="horas" use="required">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:int">
+                                    <xsd:minExclusive value="60"/>
+                                    <xsd:maxExclusive value="120"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>  
+                        </xsd:attribute>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>    
+            <xsd:attribute name="codigo" use="required">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string"> 
+                        <xsd:pattern value="[A-Z]{3}[0-9]{3}"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

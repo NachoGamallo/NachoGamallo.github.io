@@ -1,0 +1,11 @@
+<!-- Elementos sin atributos con datos-->
+
+<!ELEMENT ejemplo (#PCDATA)>
+
+<!-- Elementos con atributos con datos-->
+
+<!ELEMENT ejemplo (ejemplo2 | #PCDATA)*>
+
+<!-- Elementos con atributos sin datos-->
+
+<!ELEMENT ejemplo (ejemplo2)>
