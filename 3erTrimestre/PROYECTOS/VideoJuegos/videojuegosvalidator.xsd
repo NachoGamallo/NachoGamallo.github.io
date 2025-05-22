@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="videojuegos">
+        <xsd:complexType>
+            <xsd:sequence>
+                
+                <xsd:element name="videojuego">
+                    <xsd:complexType>
+                        <xsd:sequence>
+
+                            <xsd:element name="titulo" type="xsd:string"/>
+
+                            <xsd:element name="genero" type="xsd:string"/>
+                            
+                            <xsd:element name="imagenes">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="imagen" type="xsd:string" maxOccurs="unbounded"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="descripcion" type="xsd:string"/>
+                            
+                            <xsd:element name="precio">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:double">
+                                        <xsd:minInclusive value="0.0"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            
+                            <xsd:element name="precioDescuento">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:double">
+                                        <xsd:minInclusive value="0.0"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            
+                            <xsd:element name="stock">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:int">
+                                        <xsd:minInclusive value="0"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            
+                            <xsd:element name="UnidadesVendidas" type="xsd:long"/>
+
+                            <xsd:element name="valorOpiniones">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:double">
+                                        <xsd:minInclusive value="0.0"/>
+                                        <xsd:maxInclusive value="5.0"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+
+                            <xsd:element name="opiniones">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+
+                                        <xsd:element name="opinion" maxOccurs="unbounded">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+
+                                                    <xsd:element name="autor" type="xsd:string"/>
+
+                                                    <xsd:element name="fecha" type="xsd:date"/>
+
+                                                    <xsd:element name="nota">
+                                                        <xsd:simpleType>
+                                                            <xsd:restriction base="xsd:double">
+                                                                <xsd:minInclusive value="0.0"/>
+                                                                <xsd:maxInclusive value="5.0"/>
+                                                            </xsd:restriction>
+                                                        </xsd:simpleType>
+                                                    </xsd:element>
+
+                                                    <xsd:element name="texto" type="xsd:string"/>
+
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+
+                        </xsd:sequence>
+                        <xsd:attribute name="anyo" type="xsd:gYear"/>
+                    </xsd:complexType>
+                </xsd:element>
+
+            </xsd:sequence>            
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

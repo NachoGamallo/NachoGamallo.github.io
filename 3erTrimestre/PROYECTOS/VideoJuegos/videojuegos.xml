@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD -->
+
+<!DOCTYPE videojuegos [
+    <!ELEMENT videojuegos (videojuego)>
+    <!ELEMENT videojuego (titulo, genero, imagenes, descripcion, precio, precioDescuento, stock, UnidadesVendidas, valorOpiniones, opiniones)>
+    <!ATTLIST videojuego anyo CDATA #REQUIRED>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT genero (#PCDATA)>
+    <!ELEMENT imagenes (imagen+)> 
+    <!ELEMENT imagen (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT precioDescuento (#PCDATA)>
+    <!ELEMENT stock (#PCDATA)>
+    <!ELEMENT UnidadesVendidas (#PCDATA)>
+    <!ELEMENT valorOpiniones (#PCDATA)>
+    <!ELEMENT opiniones (opinion+)>
+    <!ELEMENT opinion (autor, fecha, nota, texto)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT nota (#PCDATA)>
+    <!ELEMENT texto (#PCDATA)>]>
+
+    
+<videojuegos>
+
+    <videojuego anyo="2013">
+        <titulo>GTA V</titulo>
+        <genero>Acción / Mundo Abierto</genero>
+        <imagenes>
+            <imagen>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqEpInD5QgJ4ONbZyaILpcvayNMQ4qaDeOeg&amp;s</imagen>
+            <imagen>https://assetsio.gnwcdn.com/gta-1621612236056.jpg?width=1600&amp;height=900&amp;fit=crop&amp;quality=100&amp;format=png&amp;enable=upscale&amp;auto=webp</imagen>
+        </imagenes>
+        <descripcion>Juego de mundo abierto ambientado en Los Santos, con acción, crimen y libertad total.</descripcion>
+        <precio>29.99</precio>
+        <precioDescuento>19.99</precioDescuento>
+        <stock>120</stock>
+        <UnidadesVendidas>180000000</UnidadesVendidas>
+        <valorOpiniones>4.8</valorOpiniones>
+        <opiniones>
+            <opinion>
+                <autor>Carlos M.</autor>
+                <fecha>2024-11-03</fecha>
+                <nota>5</nota>
+                <texto>Una obra maestra atemporal. El modo online le da vida eterna.</texto>
+            </opinion>
+            <opinion>
+                <autor>Sara D.</autor>
+                <fecha>2025-01-15</fecha>
+                <nota>4.6</nota>
+                <texto>Genial, aunque ya se nota algo viejo gráficamente.</texto>
+            </opinion>
+        </opiniones>
+    </videojuego>
+
+    <videojuego anyo="2020">
+        <titulo>Valorant</titulo>
+        <genero>Shooter táctico</genero>
+        <imagenes>
+            <imagen>https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/d0db663bf28844dcbd744935cdd8c71083e0031c-5600x3150.jpg</imagen>
+        </imagenes>
+        <descripcion>FPS competitivo con personajes únicos y habilidades especiales.</descripcion>
+        <precio>0.00</precio>
+        <precioDescuento>0.00</precioDescuento>
+        <stock>150</stock>
+        <UnidadesVendidas>0</UnidadesVendidas>
+        <valorOpiniones>4.3</valorOpiniones>
+        <opiniones>
+            <opinion>
+                <autor>Lucía G.</autor>
+                <fecha>2024-09-22</fecha>
+                <nota>4.5</nota>
+                <texto>Competitivo y adictivo, ideal para jugar con amigos.</texto>
+            </opinion>
+            <opinion>
+                <autor>Pedro N.</autor>
+                <fecha>2025-02-10</fecha>
+                <nota>4.1</nota>
+                <texto>Buen shooter, aunque los emparejamientos pueden ser frustrantes.</texto>
+            </opinion>
+        </opiniones>
+    </videojuego>
+    
+    <videojuego anyo="2009">
+        <titulo>League of Legends</titulo>
+        <genero>MOBA</genero>
+        <imagenes>
+            <imagen>https://img.redbull.com/images/c_fill,g_auto,w_1200,h_600/f_auto,q_auto/redbullcom/2022/8/1/ksfga6rlx2ugfhjd9vnk/league-of-legends</imagen>
+        </imagenes>
+        <descripcion>Juego de estrategia y acción por equipos, con gran variedad de campeones.</descripcion>
+        <precio>0.00</precio>
+        <precioDescuento>0.00</precioDescuento>
+        <stock>200</stock>
+        <UnidadesVendidas>0</UnidadesVendidas>
+        <valorOpiniones>4.0</valorOpiniones>
+        <opiniones>
+            <opinion>
+                <autor>Mario F.</autor>
+                <fecha>2024-10-05</fecha>
+                <nota>4.2</nota>
+                <texto>Gran variedad y estrategia, pero la comunidad puede ser tóxica.</texto>
+            </opinion>
+            <opinion>
+                <autor>Eva R.</autor>
+                <fecha>2025-03-18</fecha>
+                <nota>3.8</nota>
+                <texto>Divertido si te gusta competir, pero muy exigente.</texto>
+            </opinion>
+        </opiniones>
+    </videojuego>
+
+    <videojuego anyo="2017">
+        <titulo>Escape From Tarkov</titulo>
+        <genero>Shooter / Supervivencia</genero>
+        <imagenes>
+            <imagen>https://www.exitlag.com/blog/wp-content/uploads/2024/09/escape-from-tarkov.webp</imagen>
+        </imagenes>
+        <descripcion>Simulador de combate extremadamente realista centrado en incursiones de alto riesgo.</descripcion>
+        <precio>44.99</precio>
+        <precioDescuento>34.99</precioDescuento>
+        <stock>75</stock>
+        <UnidadesVendidas>6000000</UnidadesVendidas>
+        <valorOpiniones>4.2</valorOpiniones>
+        <opiniones>
+            <opinion>
+                <autor>Sergio P.</autor>
+                <fecha>2025-04-01</fecha>
+                <nota>4.3</nota>
+                <texto>Realismo increíble, pero no es para todo el mundo.</texto>
+            </opinion>
+            <opinion>
+                <autor>Lara T.</autor>
+                <fecha>2025-05-02</fecha>
+                <nota>4.1</nota>
+                <texto>Estresante pero muy satisfactorio cuando logras escapar.</texto>
+            </opinion>
+        </opiniones>
+    </videojuego>
+
+    <videojuego anyo="2023">
+        <titulo>Counter-Strike 2</titulo>
+        <genero>Shooter competitivo</genero>
+        <imagenes>
+            <imagen>https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/social/cs2.jpg</imagen>
+        </imagenes>
+        <descripcion>La nueva generación del clásico FPS de Valve con mejoras gráficas y físicas.</descripcion>
+        <precio>0.00</precio>
+        <precioDescuento>0.00</precioDescuento>
+        <stock>300</stock>
+        <UnidadesVendidas>0</UnidadesVendidas>
+        <valorOpiniones>4.4</valorOpiniones>
+        <opiniones>
+            <opinion>
+                <autor>Elena V.</autor>
+                <fecha>2025-01-19</fecha>
+                <nota>4.5</nota>
+                <texto>Una mejora notable sobre CS:GO. La jugabilidad es más fluida.</texto>
+            </opinion>
+            <opinion>
+                <autor>David S.</autor>
+                <fecha>2025-03-10</fecha>
+                <nota>4.3</nota>
+                <texto>Muy bueno, aunque aún tiene detalles que ajustar.</texto>
+            </opinion>
+        </opiniones>
+    </videojuego>
+
+    <videojuego anyo="2024">
+        <titulo>ISAC</titulo>
+        <genero>Acción / Ciencia Ficción</genero>
+        <imagenes>
+            <imagen>https://www.nintendo.com/eu/media/images/10_share_images/games_15/wiiu_download_software_5/SI_WiiUDS_TheBindingOfIsaacRebirth_image1600w.jpg</imagen>
+        </imagenes>
+        <descripcion>Juego de acción futurista con narrativa profunda sobre IA y ética tecnológica.</descripcion>
+        <precio>49.99</precio>
+        <precioDescuento>39.99</precioDescuento>
+        <stock>90</stock>
+        <UnidadesVendidas>500000</UnidadesVendidas>
+        <valorOpiniones>4.6</valorOpiniones>
+        <opiniones>
+            <opinion>
+                <autor>Nuria L.</autor>
+                <fecha>2025-05-05</fecha>
+                <nota>4.7</nota>
+                <texto>Muy bien escrito, con decisiones que realmente importan.</texto>
+            </opinion>
+            <opinion>
+                <autor>Andrés J.</autor>
+                <fecha>2025-05-15</fecha>
+                <nota>4.5</nota>
+                <texto>Gran combinación de historia y jugabilidad. Un descubrimiento.</texto>
+            </opinion>
+        </opiniones>
+    </videojuego>
+
+</videojuegos>
