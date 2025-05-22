@@ -1,0 +1,143 @@
+body{
+    width: 1200px;
+    margin: auto;
+}
+#big_container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+#img_and_textC{
+    width: 66%;
+}
+#text_BC{
+    width: 50%;
+}
+header{
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    width: 90%
+}
+header nav, nav a{
+    text-align: end;
+    width: 100%;
+    padding: 2%;
+    text-decoration: none;
+    color: grey;
+}
+.container{
+    display: flex;
+    width: 100%;
+}
+
+article{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+h1{
+    font-size: 50px;
+    padding-right: 3%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top:0;
+}
+h2{
+    font-size: 40px;
+    margin-top: 0%;
+    color: gold;
+}
+h3{
+    color: white;
+}
+h4{
+    font-size: 30px;
+    color: rgb(170, 164, 164);
+}
+.special_text{
+    color: rgb(165, 156, 156);
+}
+p {
+    color: grey;
+}
+hr{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.blackC{
+    width: 33%; 
+    background-color: black; 
+    margin-left: 2%; 
+    padding: 3%; 
+}
+button{
+    font-weight:bold ;
+    color: white;
+    background-color: rgb(224, 81, 81);
+    padding: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 5%;
+    border: none;
+}
+article>div{
+    display: flex;
+    width: 33%;
+}
+.article_img{
+    margin-right: 10%;
+    height: 75px;
+    width: 30%;
+}
+.article_text{
+    width: 70%;
+}
+.article_text>h4,h3,text{
+    margin:0;
+    margin-bottom: 8%;
+}
+article h3{
+    color: black;
+    font-weight: bold;
+}
+footer{
+    margin-top: 5%;
+    text-align: center;
+}
+
+
+@media (max-width:768px) {
+    body,#img_and_textC{
+        width: 100%;
+        margin: auto;
+    }
+    #big_container,article, .blackC{
+        width: 90%;
+        flex-direction: column;
+    }
+    header{
+        width: 90%;
+    }
+    .blackC {
+        width: 94%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    button{
+        margin-bottom: 10%;
+    }
+    .container,#text_BC,.article_text{
+        width: 100%;
+        flex-direction:column;
+    }
+    article>div,.article_text{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .article_text> h4, h3, p{
+        margin-bottom: 2%;
+    }
+}

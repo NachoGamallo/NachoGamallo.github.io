@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="https://pbs.twimg.com/media/FwYTy6-XoAIie5F.jpg" alt="Logotipo" class="log">
+        </header>
+
+        <main class="main">
+            <form class="form">
+                <h2>Formulario de Registro:</h2>
+                <label for="name">Nombre:</label>
+                <input type="email" id="name" placeholder="Dirección de correo electrónico" required autofocus>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" required>
+
+                <label for="phone">Teléfono móvil:</label>
+                <input type="tel" id="phone" pattern="[0-9]{9}" placeholder="Ejemplo: 123456789">
+
+                <label for="date">Fecha de nacimiento:</label>
+                <input type="date" id="date">
+
+                <button type="submit" class="send">Dar de alta</button>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <p>© 2024 Nacho Gamallo</p>
+        </footer>
+    </div>
+</body>
+</html>

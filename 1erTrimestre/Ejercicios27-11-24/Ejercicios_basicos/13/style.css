@@ -1,0 +1,29 @@
+#pagina{
+    margin: auto;
+    border: 2px solid black;
+    padding: 3vh 3vw;
+}
+
+h1 , h2{
+    text-align: center;
+    border: 2px solid black;
+    padding: 1%;
+    background: pink;
+}
+p {
+    text-align: center;
+    border: 2px solid black;
+    padding: 0.5%;
+}
+a{
+    background-color: yellow;
+    margin: 2vh;
+}
+.link1{
+    position: relative;
+    top: 20px;
+}
+.link2{
+    position: relative;
+    top: 40px;
+}
