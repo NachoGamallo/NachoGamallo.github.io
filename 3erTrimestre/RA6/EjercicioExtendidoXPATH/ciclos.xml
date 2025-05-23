@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ies nombre="IES Mutxamel" web="http://www.iesmutxamel.com" >
+    <ciclos>
+        <ciclo id="ASIR">
+            <nombre>Administracion de Sistemas Informaticos en Red</nombre>
+            <grado>Superior</grado>
+            <decretoTitulo año="2009" />
+            <familia>Informatica</familia>
+        </ciclo>
+        <ciclo id="DAW">
+            <nombre>Desarrollo de Aplicaciones Web</nombre>
+            <grado>Superior</grado>
+            <decretoTitulo año="2010" />
+            <familia>Informatica</familia>
+        </ciclo>
+        <ciclo id="SMR">
+            <nombre>Sistemas Microinformaticos y Redes</nombre>
+            <grado>Medio</grado>
+            <decretoTitulo año="2008" />
+            <familia>Informatica</familia>
+        </ciclo>
+        <ciclo id="ESTETICABELLEZA">
+            <nombre>Estetica y Belleza</nombre>
+            <grado>Medio</grado>
+            <decretoTitulo año="2008" />
+            <familia>Imagen Personal</familia>
+        </ciclo>
+        <ciclo id="FPBPelu">
+            <nombre>Peluqueria y Estética</nombre>
+            <grado>Basico</grado>
+            <decretoTitulo año="2008" />
+            <familia>Imagen Personal</familia>
+        </ciclo>
+        <ciclo id="FPBINF">
+            <nombre>Informatica y Comunicaciones</nombre>
+            <grado>Basico</grado>
+            <decretoTitulo año="2008" />
+            <familia>Informatica</familia>
+        </ciclo>
+    </ciclos>
+</ies>
