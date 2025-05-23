@@ -9,8 +9,8 @@
         </xsd:simpleType>
 </xsd:schema>
 
-<!-- 2 -->
-
+<!-- 2
+ 
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <xsd:element name="pago">
         <xsd:simpleType>
@@ -22,7 +22,9 @@
     </xsd:element>
 </xsd:schema>
 
-<!-- 3 -->
+-->
+
+<!-- 3
 
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <xsd:element name="DNI">
@@ -33,3 +35,5 @@
         </xsd:simpleType>
     </xsd:element>
 </xsd:schema>
+
+-->
