@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicio DOM</title>
+  <style>
+    #p1 { font-size: 16px; text-align: left; }
+    #p2 { display: block; }
+  </style>
+</head>
+<body>
+
+<h1>Bienvenido</h1>
+<p id="p1">Este es un párrafo en español.</p>
+<img src="https://via.placeholder.com/150" alt="Imagen">
+<p id="p2">Este es el segundo párrafo.</p>
+
+<button onclick="cambiarEstilo()">Cambiar estilo</button>
+<button onclick="ocultarParrafo()">Ocultar segundo párrafo</button>
+<button onclick="traducirTexto()">Traducir</button>
+
+<script>
+function cambiarEstilo() {
+  let p1 = document.getElementById("p1");
+  p1.style.fontSize = "36px";
+  p1.style.textAlign = "center";
+}
+
+function ocultarParrafo() {
+  document.getElementById("p2").style.display = "none";
+}
+
+function traducirTexto() {
+  document.getElementById("p1").textContent = "This is a paragraph in English.";
+  document.getElementById("p2").textContent = "This is the second paragraph.";
+}
+</script>
+
+</body>
+</html>

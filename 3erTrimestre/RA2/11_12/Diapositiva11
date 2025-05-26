@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Ejemplo con console. log</title>
+</head>
+
+<body>
+    <h1>Mi primera página con JavaScript</h1>
+    <script>
+        // Aquí irá nuestro código JavaScript
+        console. log("Hola desde JavaScript");
+    </script>
+</body>
+</html>
