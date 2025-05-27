@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividades JavaScript</title>
+</head>
+<body>
+
+  <h1>Actividades JavaScript - Modificar contenido y estilos</h1>
+
+  <button onclick="cambiarFondo()">Actividad 1: Cambiar fondo con botón</button>
+  <div class="output"></div>
+
+  <button onclick="mostrarOcultarTexto()">Actividad 2: Mostrar/Ocultar texto</button>
+  <p id="texto" style="display:none">Texto oculto</p>
+
+  <button onclick="mostrarResultado()">Actividad 3: Formulario con resultado</button>
+  <form id="formulario" onsubmit="return false;">
+    <input id="nombre" placeholder="Nombre">
+    <button type="submit" onclick="mostrarResultado()">Enviar</button>
+  </form>
+  <p id="resultado"></p>
+
+  <script>
+    // Actividad 1
+    function cambiarFondo() {
+      document.body.style.backgroundColor = "lightblue";
+    }
+
+    // Actividad 2
+    function mostrarOcultarTexto() {
+      let texto = document.getElementById("texto");
+      texto.style.display = texto.style.display === "none" ? "block" : "none";
+    }
+
+    // Actividad 3
+    function mostrarResultado() {
+      let nombre = document.getElementById("nombre").value;
+      document.getElementById("resultado").textContent = `Hola ${nombre}`;
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividades JavaScript</title>
+</head>
+<body>
+
+  <h1>Actividades JavaScript</h1>
+
+  <button onclick="tiposDeVariables()">Actividad 1: Tipos de variables</button>
+  <div id="output1" class="output"></div>
+
+  <button onclick="calculadora()">Actividad 2: Calculadora básica</button>
+  <div id="output2" class="output"></div>
+
+  <button onclick="convertirTemperatura()">Actividad 3: Conversor de temperatura</button>
+  <div id="output3" class="output"></div>
+
+  <script>
+    function tiposDeVariables() {
+      let texto = "Hola mundo";       
+      let numero = 42;                
+      let booleano = true;            
+      let indefinido;                 
+      let nulo = null;                
+
+      const resultado = `
+        texto: ${typeof texto}<br>
+        numero: ${typeof numero}<br>
+        booleano: ${typeof booleano}<br>
+        indefinido: ${typeof indefinido}<br>
+        nulo: ${typeof nulo}
+      `;
+      document.getElementById("output1").innerHTML = resultado;
+    }
+
+    function calculadora() {
+      let x = Number(prompt("Número 1:"));
+      let y = Number(prompt("Número 2:"));
+
+      const resultado = `
+        Suma: ${x + y}<br>
+        Resta: ${x - y}<br>
+        Multiplicación: ${x * y}<br>
+        División: ${x / y}
+      `;
+      document.getElementById("output2").innerHTML = resultado;
+    }
+
+    function convertirTemperatura() {
+      let celsius = Number(prompt("Temperatura en °C:"));
+      let fahrenheit = (celsius * 9/5) + 32;
+
+      document.getElementById("output3").innerHTML = `${celsius}°C = ${fahrenheit}°F`;
+    }
+  </script>
+
+</body>
+</html>
