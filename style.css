@@ -131,6 +131,11 @@ footer{
     transition: max-height 0.5s ease, opacity 0.5s ease;
 } /*Mostrar los ejercicios, con una transiccion. */
 
+.ejercicios{
+    background-color: rgb(255, 99, 99);
+    border-radius: 20%;
+}
+
 /*
 @keyframes scroll {
     0% { transform: translateX(100%); }
