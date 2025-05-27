@@ -1,8 +1,8 @@
 setTimeout(() => {
     alert("¡Hola! Bienvenido a la página del 3er Trimestre con JS implementado!!.");
-}, 2500); /* Popup despues de 2500 ms (2.5 segundos )*/
+}, 2500); //Popup despues de 2500 ms (2.5 segundos )
 
-/* Cuando hagamos click en una imagen, esta cambiará. Guardamos la foto original en una variable, al pasar 5 segundos sin clicar vuelve a la original. (Aun se puede mejorar)*/
+//Cuando hagamos click en una imagen, esta cambiará. Guardamos la foto original en una variable, al pasar 5 segundos sin clicar vuelve a la original. (Aun se puede mejorar).
 document.addEventListener('DOMContentLoaded', function () {
     
     const img = document.getElementById('imgJS');
@@ -31,7 +31,7 @@ let bar = document.getElementById("hellobar");
 let pos = window.innerWidth;
 
 function moverBarra(){
-    pos -= 2; /* Esto es a la velocidad que se mueve. */
+    pos -= 2; //Esto es a la velocidad que se mueve.
     if ( pos < -bar.offsetWidth){
         pos = window.innerWidth
     }
@@ -44,3 +44,33 @@ function moverBarra(){
 
 moverBarra();
 
+//Mostrar e Ocultar ejercicios. 
+
+function mostrarContenido(){
+
+    const contenedor = document.getElementById("contenedor_enlace");
+    const boton = document.getElementById("MostrarEjercicios");
+
+    const estaOculto = contenedor.style.maxHeight === "0px" || contenedor.style.maxHeight === "";
+
+    if (estaOculto) {
+        contenedor.style.maxHeight = "1000px";
+        contenedor.style.opacity = "1";
+        boton.textContent = "Ocultar ejercicios";
+    } else {
+        contenedor.style.maxHeight = "0px";
+        contenedor.style.opacity = "0";
+        boton.textContent = "Mostrar ejercicios";
+    }
+
+}
+
+/*if (contenedor.style.display === "none"){
+
+        contenedor.style.display = "block";
+
+    }else{
+        
+        contenedor.style.display = "none";
+
+    } */
