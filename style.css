@@ -2,6 +2,7 @@ body{
     margin-top: 2%;
     color: white;
     background-color: rgb(255, 164, 164);
+    user-select: none; /* Agregamos esto para que  el usuario no pueda seleccionar texto. */
 }
 
 .main_container{
@@ -109,3 +110,23 @@ footer{
         padding-left: 0;
     }
 }
+
+.hellobar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(132, 0, 255);
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    z-index: 1000;
+    animation: scroll 10s linear infinite;
+}
+
+/*
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+} Esta animacion replica el JS hecho pero en css, es mas sencillo y consume menos.*/
+
