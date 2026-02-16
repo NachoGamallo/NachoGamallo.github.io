@@ -1,0 +1,294 @@
+/* =========================================
+   1. VARIABLES Y CONFIGURACIÓN BASE
+   ========================================= */
+:root {
+    --granate: #7a1a1a;      /* Color corporativo principal */
+    --granate-oscuro: #4d1111;
+    --crema: #f9f7f2;        /* Fondo tipo pergamino */
+    --dorado: #c5a059;       /* Detalles y acentos */
+    --texto: #2c2c2c;
+    --blanco: #ffffff;
+    --sombra: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(122, 26, 26, 0.8);
+    color: white;
+    padding: 10px 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia', serif; /* Toque clásico e histórico */
+    background-color: var(--crema);
+    color: var(--texto);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* =========================================
+   2. HEADER Y NAVEGACIÓN
+   ========================================= */
+header {
+    background-color: var(--granate);
+    color: var(--blanco);
+    padding: 2.5rem 1rem;
+    text-align: center;
+    border-bottom: 5px solid var(--dorado);
+    display: flex;
+    flex-direction: row;
+    align-items: center;      
+    justify-content: center;  
+    gap: 3rem;
+    
+}
+
+header h1 {
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+header img {
+
+    max-width: 200px;
+    height: auto;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+}
+
+header div {
+    text-align: left;
+}
+
+nav {
+    background-color: var(--granate-oscuro);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav a {
+    color: var(--blanco);
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: var(--dorado);
+}
+
+/* =========================================
+   3. CONTENEDOR PRINCIPAL Y TÍTULOS
+   ========================================= */
+main {
+    flex: 1;
+    padding: 3rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--granate);
+    font-size: 2.2rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: var(--dorado);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* =========================================
+   4. COMPONENTES ESPECÍFICOS (Home, Rutas, Blog)
+   ========================================= */
+
+/* Carrusel (Home) */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border: 8px solid var(--blanco);
+    box-shadow: var(--sombra);
+    margin-bottom: 3rem;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active { opacity: 1; }
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Grid de Rutas */
+.ruta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.ruta-card {
+    background: var(--blanco);
+    padding: 1.5rem;
+    border-radius: 4px;
+    box-shadow: var(--sombra);
+    transition: transform 0.3s;
+}
+
+.ruta-card:hover {
+    transform: translateY(-5px);
+}
+
+.ruta-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.tag {
+    display: inline-block;
+    background: var(--granate);
+    color: white;
+    padding: 3px 10px;
+    font-size: 0.7rem;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+/* Blog */
+article {
+    background: var(--blanco);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    border-left: 6px solid var(--dorado);
+    box-shadow: var(--sombra);
+}
+
+.date {
+    font-size: 0.85rem;
+    color: #666;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Quiénes Somos (Layout) */
+.flex-container {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* =========================================
+   5. CONTACTO Y FORMULARIOS
+   ========================================= */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.info-card {
+    background: var(--blanco);
+    padding: 2rem;
+    box-shadow: var(--sombra);
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+}
+
+/* =========================================
+   6. FOOTER
+   ========================================= */
+footer {
+    background-color: var(--granate);
+    color: var(--blanco);
+    padding: 3rem 1rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.social-links a {
+    color: var(--dorado);
+    margin: 0 15px;
+    font-size: 1.1rem;
+}
+
+footer p {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/* =========================================
+   7. RESPONSIVE
+   ========================================= */
+@media (max-width: 768px) {
+    header h1 { font-size: 2rem; }
+    nav { flex-direction: column; align-items: center; }
+    nav a { margin: 5px 0; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .carousel-container { height: 300px; }
+}
