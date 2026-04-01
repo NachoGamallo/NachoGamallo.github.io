@@ -11,32 +11,36 @@ body {
     color: var(--text);
     background-color: #000;
     overflow-x: hidden;
+    line-height: 1.4; /* Mejor legibilidad */
 }
 
 /* Fondo con textura suciedad */
 .bg-overlay {
     position: fixed;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: url('img/index/backgroundIndex.jpeg'), 
-                linear-gradient(to bottom, #1a1a1a, #000);
+    background: linear-gradient(to bottom, rgba(26,26,26,0.8), #000), 
+                url('img/index/backgroundIndex.jpeg');
+    background-size: cover;
+    background-position: center;
     z-index: -1;
 }
 
 /* HEADER CON RICK */
 .twd-header {
     text-align: center;
-    padding-top: 20px;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+    padding: 20px 10px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent);
     border-bottom: 2px solid var(--blood);
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .logo-text {
-    font-family: 'Creepster', cursive; /* Fuente TWD */
-    font-size: 4rem;
+    font-family: 'Creepster', cursive;
+    font-size: clamp(2.5rem, 8vw, 4rem); /* Tamaño fluido: ni muy grande en móvil, ni pequeño en PC */
     margin: 0;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     text-shadow: 3px 3px 0px #000;
+    line-height: 1.1;
 }
 
 .highlight { color: var(--blood); }
@@ -50,19 +54,21 @@ body {
 }
 
 .hero-image {
-    height: 250px; /* Ajusta según tu foto */
+    height: auto;
+    max-height: 250px;
     overflow: hidden;
-    margin-top: -20px;
+    margin-top: -10px;
     position: relative;
     z-index: -1;
 }
 
 .rick-img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
     filter: contrast(1.2) sepia(0.3);
-    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 
 /* CAJAS DE SUMINISTROS */
@@ -70,16 +76,17 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 15px; /* Evita que toquen los bordes del móvil */
 }
 
 .box {
-    width: 160px;
-    height: 160px;
+    width: 140px; /* Un poco más pequeñas para que quepan 2 en paralelo en móviles medianos */
+    height: 140px;
     background: #222;
-    border: 4px solid #444;
+    border: 3px solid #444;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,8 +95,8 @@ body {
     transition: 0.3s;
     text-align: center;
     font-weight: bold;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
     position: relative;
+    box-sizing: border-box;
 }
 
 /* Efecto de suciedad en las cajas */
@@ -164,11 +171,15 @@ input {
 .btn-secondary:hover { border-color: white; color: white; }
 
 /* Estilos para el Index y Carta */
-.menu-container {
+.menu-container, .photo-album {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    gap: 30px;
-    margin-top: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 0 10px;
 }
 
 .rick-img-small {
@@ -177,21 +188,22 @@ input {
 }
 
 .file-paper {
-    background: #d8cba8; /* Color papel viejo */
+    background: var(--dirty-paper);
     color: #222;
-    padding: 40px;
+    padding: 25px; /* Menos padding en móvil */
+    width: 90%;
     max-width: 600px;
     margin: 20px auto;
-    box-shadow: 10px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 8px 8px 0px rgba(0,0,0,0.5);
     border: 1px solid #b5a478;
     font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
 }
 
 .letter-text {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    margin: 20px 0;
-    white-space: pre-wrap;
+    font-size: 1rem;
+    line-height: 1.4;
+    word-wrap: break-word; /* Evita que el texto rompa el diseño */
 }
 
 .polaroid {
@@ -207,8 +219,68 @@ input {
 .polaroid p { margin: 10px 0 0 0; color: #444; font-size: 0.8rem; }
 .rotate-right { transform: rotate(3deg); }
 
-.photo-album {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
+@media (max-width: 768px) {
+    .logo-text {
+        letter-spacing: 2px;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    /* Stackeamos el menú (uno debajo de otro) */
+    .menu-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .rick-img-small {
+        height: 150px;
+    }
+
+    /* Las cajas de suministros ahora se adaptan */
+    .box {
+        width: calc(50% - 15px); /* Dos cajas por fila en móvil */
+        min-width: 140px;
+    }
+
+    /* Ajuste de los botones para dedos (más grandes) */
+    .btn-main, .btn-action {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+
+    /* El modal debe ocupar casi toda la pantalla */
+    .modal-content {
+        width: 85%;
+        padding: 20px;
+    }
+
+    /* Álbum de fotos en vertical */
+    .photo-album {
+        flex-direction: column;
+    }
+    
+    .polaroid {
+        transform: rotate(0deg) !important; /* Quitamos rotación en móvil para ahorrar espacio */
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 100%; /* Una caja por fila en móviles muy pequeños */
+        height: 100px;
+        flex-direction: row;
+        padding-left: 20px;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+    
+    .logo-text {
+        font-size: 2.2rem;
+    }
 }
