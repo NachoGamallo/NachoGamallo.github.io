@@ -12,25 +12,25 @@
         id: 2, 
         pista: "No soy real, pero tengo poder, puedo mandar sin obedecer. En tela suave ahora estoy, pero en mi historia temido soy.  ¿Quién soy?", 
         solucion: "lelouch lamperouge", 
-        revelado: "¡Un peluchito para que te acompañe a mimir!" 
+        revelado: "¡Un peluchito para que te acompañe a mimir de Lelouch!" 
     },
     { 
         id: 3, 
         pista: "En una isla nací famoso, acompaño charlas sin reposo. No soy café, pero despierto, y con leche, soy un acierto.  ¿Qué soy?", 
         solucion: "te ingles", 
-        revelado: "Para los dias que recuerdes tu viaje..." 
+        revelado: "Para los dias que recuerdes tu viaje... tesito" 
     },
     { 
         id: 4, 
         pista: "Aventuras son mi rutina, tesoros sigo en cada esquina. Con trenzas o pistolas voy, en versión mini ahora soy.  ¿Quién soy?", 
         solucion: "lara croft", 
-        revelado: "Para tu aventurera interior, que tengas una referencia" 
+        revelado: "Para tu aventurera interior, que tengas una referencia con lara en casa" 
     },
     { 
         id: 5, 
         pista: "No estoy vivo, pero camino, no pienso, pero te domino. En la tele doy terror, y ahora voy con mucho estilo y color.  ¿Qué soy?", 
         solucion: "camiseta he walking dead", 
-        revelado: "Para que no falte la nostalgia y el flow" 
+        revelado: "Para que no falte la nostalgia y el flow the tu serie fav" 
     },
     { 
         id: 6, 
@@ -48,7 +48,7 @@
         id: 8, 
         pista: "No hablo, pero hago brillar, no camino, pero puedo acompañar. Van en pares o en unión, y adornan con intención.  ¿Qué soy?", 
         solucion: "joyas", 
-        revelado: "Para que brilles mas de lo que brillas ya por ti misma..." 
+        revelado: "Para que brilles mas de lo que brillas ya por ti misma... joyitas bonitash" 
     },
     { 
         id: 9, 
