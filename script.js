@@ -29,19 +29,19 @@
     { 
         id: 5, 
         pista: "No estoy vivo, pero camino, no pienso, pero te domino. En la tele doy terror, y ahora voy con mucho estilo y color.  ¿Qué soy?", 
-        solucion: "camiseta he walking dead", 
+        solucion: "walking dead", 
         revelado: "Para que no falte la nostalgia y el flow the tu serie fav" 
     },
     { 
         id: 6, 
         pista: "Ritmo, letras y emoción, sobre el escenario doy lo mejor. No soy concierto, pero abrigo, y llevo a un ídolo contigo.  ¿Qué soy?", 
-        solucion: "sudadera stray kids", 
+        solucion: "stray kids", 
         revelado: "Para que lleves contigo a tu kid favorito" 
     },
     { 
         id: 7, 
         pista: "No soy arma, pero ayudo a apuntar, sin mí, te cuesta más acertar. De hielo curo en otro lugar, pero aquí te dejo deslizar.  ¿Qué soy?", 
-        solucion: "alfombrilla sage", 
+        solucion: "sage", 
         revelado: "Para que lleves contigo a tu niña y apuntes mejor jeje" 
     },
     { 
@@ -59,7 +59,7 @@
     { 
         id: 10, 
         pista: "No soy flor, pero tengo aroma, no soy sol, pero doy calor. Vivo menos cuando me usas, y aun así, me enciendes sin temor.  ¿Qué soy?", 
-        solucion: "vela aromatica", 
+        solucion: "vela", 
         revelado: "Para que tu habitacion huela a lo que tu esencia es, pureza" 
     }
     
